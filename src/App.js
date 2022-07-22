@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
-import Project from './components/Project';
+import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   <>
     <Header />
     <Navigation />
-    <Project />
+    <Main />
     <Footer />
   </>
   );
