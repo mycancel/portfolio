@@ -3,7 +3,7 @@ import React from 'react'
 function About() {
   return (
     <div>
-      <h2 id="about-me">About Me</h2>
+      <h2>About Me</h2>
       <p>
         Mary Cancellieri is a full-stack web developer based in North
         Carolina. She received her BA in Nonprofit Management and Community

@@ -44,7 +44,7 @@ function addProjects() {
 function Project() {
   return (
     <section>
-      <h2 id="projects">Projects</h2>
+      <h2>Projects</h2>
       <div>{addProjects()}</div>
     </section>
   );
