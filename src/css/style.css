@@ -18,7 +18,21 @@ body {
   opacity: 0;
 }
 
+.note {
+  display: none;
+}
+
 .overlay:hover{
   background-color: var(--card);
   opacity: 100%
+}
+
+/* When the screen's width reaches 920 or lower,*/
+@media screen and (max-width: 992px){
+ .overlay {
+  display:none;
+ }
+ .note {
+  display: block
+ }
 }

@@ -6,7 +6,7 @@ var projectArray = [
     app: "https://hreichgelt.github.io/Maps---The-Fingerprint-of-the-Past/",
     src: "./images/map-search.png",
     alt: "Map Search",
-    title: "Map Search Using APIs",
+    title: "API Map Search",
   },
   {
     git: "https://github.com/mycancel/password-generator",
@@ -49,6 +49,7 @@ function addProjects() {
   const projects = projectArray.map((project) => {
     return (
       <article className="col-10 col-sm-6 col-md-4 col-lg-3 m-3">
+        <h4 className="text-center mt-2 text-nowrap">{project.title}</h4>
         <div className="card border-secondary">
           <img
             src={project.src}
@@ -57,16 +58,25 @@ function addProjects() {
             height="210px"
             className="card-img"
           />
+          {/* An overlay is displayed over the image on large screens */}
           <div className="card-img-overlay text-center overlay">
             <a className="card-text" href={project.git} target="_blank" rel="noreferrer">
               <button className="m-3 mt-4 btn btn-success">Github Repository</button>
             </a>
             <a className="card-text" href={project.app} target="_blank"rel="noreferrer">
-              <button  className="m-3 btn btn-success">Deployed Site</button>
+              <button className="m-3 btn btn-success">Deployed Site</button>
             </a>
           </div>
         </div>
-        <h4 className="text-center mt-2">{project.title}</h4>
+        {/* This is displayed underneath the image on small to medium screens */}
+        <div className="text-center note">
+            <a className="card-text" href={project.git} target="_blank" rel="noreferrer">
+              <button className="m-3 py-2 btn btn-success">Github Repository</button>
+            </a>
+            <a className="card-text" href={project.app} target="_blank"rel="noreferrer">
+              <button className="m-3 px-4 py-2 btn btn-success">Deployed Site</button>
+            </a>
+        </div>
       </article>
     );
   });
