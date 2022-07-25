@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigation from './Navigation';
 import '../styles/Header.css';
-import showNav from '../utils/showNav'
+import { showNav } from '../utils/helpers'
 
 function disableButton(btn, page) {
   const disabledBool = (btn === page) ? true : false;
