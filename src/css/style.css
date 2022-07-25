@@ -52,6 +52,20 @@ header button {
   opacity: 100%
 }
 
+/* Footer */
+footer {
+  background-color: var(--green);
+}
+
+footer a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--offwhite);
+}
+
 /* When the screen's width reaches 920 or lower,*/
 @media screen and (max-width: 992px){
  .overlay {
