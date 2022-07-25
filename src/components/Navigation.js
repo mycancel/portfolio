@@ -2,6 +2,7 @@ import React from "react";
 import About from "./About";
 import Project from "./Project";
 import Contact from "./Contact";
+import Resume from "./Resume";
 
 function displayPage(page) {
   if (page === "about") {
@@ -20,6 +21,12 @@ function displayPage(page) {
     return (
       <>
         <Contact />
+      </>
+    );
+  } else if (page === "resume") {
+    return (
+      <>
+        <Resume />
       </>
     );
   }
@@ -42,6 +49,9 @@ function Navigation({ page, setPage }) {
         </button>
         <button onClick={() => setPage("contact")} disabled={disableButton("contact", page)}>
           Contact Me
+        </button>
+        <button onClick={() => setPage("resume")} disabled={disableButton("resume", page)}>
+          Resume
         </button>
       </nav>
       <main>{displayPage(page)}</main>

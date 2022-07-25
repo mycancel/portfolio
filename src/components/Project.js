@@ -75,7 +75,7 @@ function addProjects() {
             <a className="card-text" href={project.git} target="_blank" rel="noreferrer">
               <button className="m-3 mt-4 btn btn-success">Github Repository</button>
             </a>
-            <a className="card-text" href={project.app} target="_blank"rel="noreferrer">
+            <a className="card-text" href={project.app} target="_blank" rel="noreferrer">
               <button className="m-3 btn btn-success">Deployed Site</button>
             </a>
           </div>
