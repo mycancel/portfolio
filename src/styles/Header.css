@@ -14,7 +14,6 @@ body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* Header and Navigation Bar */
 header {
   background-color: var(--teal);
   color: var(--offwhite);
@@ -38,42 +37,8 @@ header button {
   display: none;
 }
 
-/* Project Page */
-.overlay {
-  opacity: 0;
-}
-
-.note {
-  display: none;
-}
-
-.overlay:hover{
-  background-color: var(--card);
-  opacity: 100%
-}
-
-/* Footer */
-footer {
-  background-color: var(--green);
-}
-
-footer a {
-  color: var(--light);
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: var(--offwhite);
-}
-
 /* When the screen's width reaches 920 or lower,*/
 @media screen and (max-width: 992px){
- .overlay {
-  display:none;
- }
- .note {
-  display: block
- }
  header nav{
   visibility: hidden;
  }
