@@ -6,7 +6,7 @@ function About() {
       <aside>
         <img src="./images/avataaars.png" alt="Avatar" />
       </aside>
-      <div>
+      <section>
         <h2>About Me</h2>
         <p>
           Mary Cancellieri is a full-stack web developer based in North
@@ -17,7 +17,7 @@ function About() {
           her study in web development at UNC Charlotte School of Professional
           Studies.
         </p>
-      </div>
+      </section>
     </>
   );
 }
