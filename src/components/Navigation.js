@@ -4,26 +4,27 @@ import Project from "./Project";
 import Contact from "./Contact";
 import Resume from "./Resume";
 
+
 function displayPage(page) {
-  if (page === "about") {
+  if (page === "About Me") {
     return (
       <>
         <About />
       </>
     );
-  } else if (page === "project") {
+  } else if (page === "Projects") {
     return (
       <>
         <Project />
       </>
     );
-  } else if (page === "contact") {
+  } else if (page === "Contact Me") {
     return (
       <>
         <Contact />
       </>
     );
-  } else if (page === "resume") {
+  } else if (page === "Resume") {
     return (
       <>
         <Resume />

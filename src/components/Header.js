@@ -31,26 +31,26 @@ function Header({page, setPage}) {
         <button className="mb-3 p-3 border-0 h4 menu" onClick={() =>showNav()}>Menu</button>
         <nav className="d-flex justify-content-end">
 
-          <button onClick={() => setPage("about")} 
-            disabled={disableButton("about", page)}
+          <button onClick={() => setPage("About Me")} 
+            disabled={disableButton("About Me", page)}
             className="mb-3 px-3 light-text border-0 text-nowrap">
             About Me
           </button>
 
-          <button onClick={() => setPage("project")} 
-            disabled={disableButton("project", page)}
+          <button onClick={() => setPage("Projects")} 
+            disabled={disableButton("Projects", page)}
             className="mb-3 px-3 light-text border-0 text-nowrap">
             Projects
           </button>
 
-          <button onClick={() => setPage("contact")} 
-            disabled={disableButton("contact", page)}
+          <button onClick={() => setPage("Contact Me")} 
+            disabled={disableButton("Contact Me", page)}
             className="mb-3 px-3 light-text border-0 text-nowrap">
             Contact Me
           </button>
 
-          <button onClick={() => setPage("resume")} 
-            disabled={disableButton("resume", page)}
+          <button onClick={() => setPage("Resume")} 
+            disabled={disableButton("Resume", page)}
             className="mb-3 px-3 light-text border-0 text-nowrap">
             Resume
           </button>
