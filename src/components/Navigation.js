@@ -6,31 +6,18 @@ import Resume from "./Resume";
 
 
 function displayPage(page) {
-  if (page === "About Me") {
-    return (
-      <>
-        <About />
-      </>
-    );
-  } else if (page === "Projects") {
-    return (
-      <>
-        <Project />
-      </>
-    );
-  } else if (page === "Contact Me") {
-    return (
-      <>
-        <Contact />
-      </>
-    );
-  } else if (page === "Resume") {
-    return (
-      <>
-        <Resume />
-      </>
-    );
-  }
+  let CurrentPage;
+
+  if (page === 'About Me') CurrentPage = About;
+  if (page === 'Projects') CurrentPage = Project;
+  if (page === 'Contact Me') CurrentPage = Contact;
+  if (page === 'Resume') CurrentPage = Resume;
+
+  return (
+    <>
+      <CurrentPage />
+    </>
+  );
 }
 
 function Navigation({ page }) {

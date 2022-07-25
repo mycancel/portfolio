@@ -13,6 +13,8 @@ function Contact() {
     const inputType = target.name;
     const inputValue = target.value;
 
+    setErrorMessage('');
+
     if (inputType === 'name') {
       setName(inputValue);
     } else if (inputType === 'email') {
@@ -44,7 +46,6 @@ function Contact() {
     setName('');
     setEmail('');
     setMessage('');
-    setErrorMessage('');
   };
 
 
@@ -64,7 +65,6 @@ function Contact() {
             value={name}
             type="text"
             className="form-control"
-            placeholder="name@example.com"
             onChange={handleInputChange}
             required
           />
@@ -108,7 +108,7 @@ function Contact() {
       </form>
 
       {errorMessage && (
-        <div>
+        <div className="mx-4 mb-3">
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
