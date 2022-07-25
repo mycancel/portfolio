@@ -2,12 +2,12 @@ import React from "react";
 
 function About() {
   return (
-    <>
-      <aside>
-        <img src="./images/avataaars.png" alt="Avatar" />
+    <section className="row vh-100 m-4">
+      <aside className="col-12 col-md-4 col-lg-4 col-xl-3">
+        <img src="./images/avataaars.png" alt="Avatar" className="img-fluid" />
       </aside>
-      <section>
-        <h2>About Me</h2>
+      <section className="col-12 col-md-6 col-lg-6 col-xl-7 m-4">
+        <h2 className="m-4 text-left"><u>About Me</u></h2>
         <p>
           Mary Cancellieri is a full-stack web developer based in North
           Carolina. She received her BA in Nonprofit Management and Community
@@ -18,7 +18,7 @@ function About() {
           Studies.
         </p>
       </section>
-    </>
+    </section>
   );
 }
 
