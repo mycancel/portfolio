@@ -32,28 +32,9 @@ function displayPage(page) {
   }
 }
 
-function disableButton(btn, page) {
-  const disabledBool = (btn === page) ? true : false;
-  return disabledBool;
-}
-
-function Navigation({ page, setPage }) {
+function Navigation({ page }) {
   return (
     <>
-      <nav>
-        <button onClick={() => setPage("about")} disabled={disableButton("about", page)}>
-          About Me
-        </button>
-        <button onClick={() => setPage("project")} disabled={disableButton("project", page)}>
-          Projects
-        </button>
-        <button onClick={() => setPage("contact")} disabled={disableButton("contact", page)}>
-          Contact Me
-        </button>
-        <button onClick={() => setPage("resume")} disabled={disableButton("resume", page)}>
-          Resume
-        </button>
-      </nav>
       <main>{displayPage(page)}</main>
     </>
   );

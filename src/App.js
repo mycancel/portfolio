@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Header from './components/Header';
-import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 
 function App() {
@@ -8,8 +7,7 @@ function App() {
 
   return (
   <>
-    <Header />
-    <Navigation page={page} setPage={setPage}/>
+    <Header page={page} setPage={setPage}/>
     <Footer />
   </>
   );
