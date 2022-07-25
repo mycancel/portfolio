@@ -1,12 +1,13 @@
 import React from "react";
 
-var projectArray = [
+const projectArray = [
   {
     git: "https://github.com/Hreichgelt/Maps---The-Fingerprint-of-the-Past",
     app: "https://hreichgelt.github.io/Maps---The-Fingerprint-of-the-Past/",
     src: "./images/map-search.png",
     alt: "Map Search",
     title: "API Map Search",
+    key: uuid()
   },
   {
     git: "https://github.com/mycancel/password-generator",
@@ -14,6 +15,7 @@ var projectArray = [
     src: "./images/password-generator.png",
     alt: "Password Generator",
     title: "Password Generator",
+    key: uuid()
   },
   {
     git: "https://github.com/mycancel/weather-dashboard",
@@ -21,6 +23,7 @@ var projectArray = [
     src: "./images/weather-dashboard.png",
     alt: "Weather Dashboard",
     title: "Weather Dashboard",
+    key: uuid()
   },
   {
     git: "https://github.com/mycancel/trailblazers",
@@ -28,6 +31,7 @@ var projectArray = [
     src: "./images/trailblazers.png",
     alt: "Trailblazers NPS API Search",
     title: "NPS API Backend",
+    key: uuid()
   },
   {
     git: "https://github.com/mycancel/password-generator",
@@ -35,6 +39,7 @@ var projectArray = [
     src: "./images/password-generator.png",
     alt: "Password Generator",
     title: "Password Generator",
+    key: uuid()
   },
   {
     git: "https://github.com/mycancel/weather-dashboard",
@@ -42,13 +47,20 @@ var projectArray = [
     src: "./images/weather-dashboard.png",
     alt: "Weather Dashboard",
     title: "Weather Dashboard",
+    key: uuid()
   },
 ];
+
+function uuid() {
+  return Math.floor((1 + Math.random()) * 0x10000)
+  .toString(16)
+  .substring(1);
+};
 
 function addProjects() {
   const projects = projectArray.map((project) => {
     return (
-      <article className="col-10 col-sm-6 col-md-4 col-lg-3 m-3">
+      <article key={project.key} className="col-10 col-sm-6 col-md-4 col-lg-3 m-3">
         <h4 className="text-center mt-2 text-nowrap">{project.title}</h4>
         <div className="card border-secondary">
           <img
