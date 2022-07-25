@@ -1,7 +1,54 @@
-import React from "react";
+import { useState } from "react";
 import '../styles/Contact.css';
+import { validateEmail } from '../utils/helper';
 
 function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === 'name') {
+      setName(inputValue);
+    } else if (inputType === 'email') {
+      setEmail(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    const trimName = name.trim();
+    const trimMessage = message.trim();
+
+    if (!validateEmail(email)) {
+      setErrorMessage('Email is invalid');
+      return;
+    }
+    if (!trimName) {
+      setErrorMessage('Please enter your name.');
+      return;
+    }
+    if (!trimMessage) {
+      setErrorMessage('Please enter content for your email.');
+      return;
+    }
+
+    setName('');
+    setEmail('');
+    setMessage('');
+    setErrorMessage('');
+  };
+
+
+
   return (
     <section>
       <h2 className="m-4 text-center">
@@ -13,10 +60,12 @@ function Contact() {
             Name
           </label>
           <input
+            name="name"
+            value={name}
             type="text"
             className="form-control"
-            id="name"
             placeholder="name@example.com"
+            onChange={handleInputChange}
             required
           />
         </div>
@@ -26,10 +75,12 @@ function Contact() {
             Your Email address
           </label>
           <input
+            name="email"
+            value={email}
             type="email"
             className="form-control"
-            id="email"
             placeholder="name@example.com"
+            onChange={handleInputChange}
             required
           />
         </div>
@@ -39,20 +90,28 @@ function Contact() {
             Message
           </label>
           <textarea
+            name="message"
+            value={message}
             className="form-control"
-            id="message"
             rows="3"
+            onChange={handleInputChange}
             required
           ></textarea>
         </div>
 
         <div id="invalid-feedback"></div>
 
-        <button className="btn btn-primary mx-4 mb-3" type="submit">
+        <button className="btn btn-primary mx-4 mb-3" type="button" onClick={handleFormSubmit}>
           Submit form
         </button>
 
       </form>
+
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
     </section>
   );
 }
