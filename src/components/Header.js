@@ -1,26 +1,11 @@
 import React from 'react'
 import Navigation from './Navigation';
 import '../styles/Header.css';
+import showNav from '../utils/showNav'
 
 function disableButton(btn, page) {
   const disabledBool = (btn === page) ? true : false;
   return disabledBool;
-}
-
-// Toggles the visible state of the navbar menu
-function showNav() {
-  const nav = document.querySelector('nav');
-  const classes = nav.classList.value.trim();
-  if (classes.includes('visible')) {
-    nav.classList = '';
-    const newClasses = classes.replace(' visible', '');
-    nav.classList = newClasses;
-  } else {
-    console.log('It does not have it')
-    nav.classList = '';
-    const newClasses = classes + ' visible'
-    nav.classList = newClasses;
-  }
 }
 
 function Header({page, setPage}) {
