@@ -15,7 +15,7 @@ body {
 }
 
 /* Header and Navigation Bar */
-header, header button {
+header {
   background-color: var(--teal);
   color: var(--offwhite);
 }
@@ -24,6 +24,9 @@ header button {
   display: flex;
   margin-left: 16px;
   margin-right: 16px;
+  font-size: medium;
+  color: var(--offwhite);
+  background-color: transparent;
 }
 
 .light-text:disabled {
@@ -64,6 +67,8 @@ header button {
   visibility: visible;
   display: flex;
   flex-direction: column;
+  padding-top: 16px;
+  background-color: var(--green);
  }
  .menu {
   display: block;
