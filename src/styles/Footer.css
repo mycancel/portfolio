@@ -1,11 +1,12 @@
 :root {
   --dark: rgb(31 36 33);
-  --teal: rgb(33 104 105);
-  --green: rgb(73 160 120);
-  --light: rgb(156 197 161);
-  --card: rgba(156, 197, 161, 0.5);
+  --deep: rgb(2, 48, 71);
+  --blue: rgb(33, 158, 188);
+  --light: rgb(142, 202, 230);
+  --hover: rgb(255, 183, 3);
+  --button: rgb(251, 133, 0);
+  --card: rgba(2, 48, 71, 0.5);
   --offwhite: rgb(220 225 222);
-  --heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 footer {
-  background-color: var(--green);
+  background-color: var(--blue);
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -27,7 +28,7 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--offwhite);
+  color: var(--hover);
 }
 
 /* When the screen's width reaches 768px or lower,*/

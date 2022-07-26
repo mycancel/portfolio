@@ -1,11 +1,12 @@
 :root {
   --dark: rgb(31 36 33);
-  --teal: rgb(33 104 105);
-  --green: rgb(73 160 120);
-  --light: rgb(156 197 161);
-  --card: rgba(156, 197, 161, 0.5);
+  --deep: rgb(2, 48, 71);
+  --blue: rgb(33, 158, 188);
+  --light: rgb(142, 202, 230);
+  --hover: rgb(255, 183, 3);
+  --button: rgb(251, 133, 0);
+  --card: rgba(2, 48, 71, 0.5);
   --offwhite: rgb(220 225 222);
-  --heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 }
 
 header {
-  background-color: var(--teal);
+  background-color: var(--deep);
   color: var(--offwhite);
   width: 100%;
 }
@@ -26,12 +27,16 @@ header button {
   margin-left: 16px;
   margin-right: 16px;
   font-size: medium;
-  color: var(--offwhite);
+  color: var(--light);
   background-color: transparent;
 }
 
+header button:hover {
+  color: var(--hover);
+}
+
 .light-text:disabled {
-  color: var(--light);
+  color: var(--offwhite);
   text-decoration: underline;
 }
 
@@ -53,15 +58,24 @@ header button {
     flex-direction: column;
     align-items: flex-end;
     padding-top: 16px;
-    background-color: var(--green);
+    background-color: var(--blue);
+  }
+  .visible button {
+    color: var(--deep);
+  }
+  .visible button:disabled {
+    color: var(--deep);
+    font-weight: bold;
   }
   .menu {
     display: inline-block;
+    color: var(--deep);
+    font-weight: bold;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     width: 100px;
     margin-left: 0;
     margin-right: 0;
-    background-color: var(--green);
+    background-color: var(--blue);
   }
 }
