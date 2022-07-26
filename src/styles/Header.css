@@ -17,6 +17,7 @@ body {
 header {
   background-color: var(--teal);
   color: var(--offwhite);
+  width: 100%;
 }
 
 header button {
@@ -39,18 +40,18 @@ header button {
 
 /* When the screen's width reaches 920 or lower,*/
 @media screen and (max-width: 992px){
- header nav{
-  visibility: hidden;
- }
- .visible {
-  visibility: visible;
-  display: flex;
-  flex-direction: column;
-  padding-top: 16px;
-  background-color: var(--green);
- }
- .menu {
-  display: block;
-  background-color: var(--green);
- }
+  header nav{
+    visibility: hidden;
+  }
+  .visible {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    background-color: var(--green);
+  }
+  .menu {
+    display: block;
+    background-color: var(--green);
+  }
 }

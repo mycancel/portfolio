@@ -3,11 +3,11 @@ import '../styles/About.css';
 
 function About() {
   return (
-    <section className="row vh-100 m-4">
-      <aside className="col-12 col-md-4 col-lg-4 col-xl-3">
+    <section id="about" className="row m-4 justify-content-center align-items-center">
+      <aside className="col-xs-7 col-sm-6 col-md-5 col-lg-4 col-xl-3">
         <img src="./images/avataaars.png" alt="Avatar" className="img-fluid" />
       </aside>
-      <section className="col-12 col-md-6 col-lg-6 col-xl-7 m-4">
+      <section className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-7 m-4">
         <h2 className="m-4 text-left"><u>About Me</u></h2>
         <p>
           Mary Cancellieri is a full-stack web developer based in North

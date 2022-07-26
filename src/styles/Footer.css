@@ -16,6 +16,9 @@ body {
 
 footer {
   background-color: var(--green);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a {
