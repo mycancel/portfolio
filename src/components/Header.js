@@ -12,9 +12,11 @@ function Header({page, setPage}) {
   return (
     <>
       <header className="d-flex flex-column vw-100">
-        <h1 className="m-3 light-text">Mary Cancellieri</h1>
-        {/* Menu button visible on small and medium screens */}
-        <button className="mb-3 p-3 border-0 h4 menu" onClick={() =>showNav()}>Menu</button>
+        <div className="d-flex mx-3 mt-3">
+          <h1 className="light-text flex-fill">Mary Cancellieri</h1>
+          {/* Menu button visible on small and medium screens */}
+          <button className="p-2 border-0 menu" onClick={() =>showNav()}>Menu</button>
+        </div>
         <nav className="d-flex justify-content-end">
 
           <button onClick={() => setPage("About Me")} 

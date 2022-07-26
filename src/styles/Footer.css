@@ -30,7 +30,9 @@ footer a:hover {
   color: var(--offwhite);
 }
 
-/* When the screen's width reaches 920 or lower,*/
-@media screen and (max-width: 992px){
-  
+/* When the screen's width reaches 576px or lower,*/
+@media screen and (max-width: 576px){
+  footer a {
+    color: var(--offwhite);
+  }
 }
