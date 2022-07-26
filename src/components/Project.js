@@ -35,19 +35,19 @@ const projectArray = [
     key: uuid()
   },
   {
-    git: "https://github.com/mycancel/password-generator",
-    app: "https://mycancel.github.io/password-generator/",
-    src: "./images/password-generator.png",
-    alt: "Password Generator",
-    title: "Password Generator",
+    git: "https://github.com/mycancel/team-profile-generator",
+    app: "https://drive.google.com/file/d/1iU0dU85HjltMJvvJut6rmc0MN3Zf56NO/view",
+    src: "./images/team-roster.png",
+    alt: "Team Roster",
+    title: "Team Roster",
     key: uuid()
   },
   {
-    git: "https://github.com/mycancel/weather-dashboard",
-    app: "https://mycancel.github.io/weather-dashboard/",
-    src: "./images/weather-dashboard.png",
-    alt: "Weather Dashboard",
-    title: "Weather Dashboard",
+    git: "https://github.com/mycancel/work-day-scheduler",
+    app: "https://mycancel.github.io/work-day-scheduler/",
+    src: "./images/work-day-scheduler.png",
+    alt: "Work Day Scheduler",
+    title: "Work Day Scheduler",
     key: uuid()
   },
 ];
