@@ -6,7 +6,7 @@ function Resume() {
     <section className="text-center">
       <h2 className="m-4"><u>Resume</u></h2>
       <article className="m-4">
-        <a href="./pdf/sample-resume.pdf" target="_blank" rel="noreferrer">Copy of Resume</a>
+        <a href="./pdf/sample-resume.pdf" target="_blank" rel="noreferrer">Link to Resume</a>
 
         <h2 className="m-4">Proficiencies</h2>
           <p className="list-group-item">HTML / CSS</p>
